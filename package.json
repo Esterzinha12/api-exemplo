@@ -1,0 +1,26 @@
+{
+  "name": "api-exemplo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esterzinha12/api-exemplo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Esterzinha12/api-exemplo/issues"
+  },
+  "homepage": "https://github.com/Esterzinha12/api-exemplo#readme",
+  "dependencies": {
+    "express": "^4.18.3",
+    "mysql-promise": "^5.0.0",
+    "mysql2": "^3.9.2",
+    "nodemon": "^3.1.0"
+  }
+}
