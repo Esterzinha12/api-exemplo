@@ -9,9 +9,13 @@ async function getAllUser(req, res){
     }catch(erro){
         res.status(500).send({
             message: "Error getting users",
-            body: error.message,
+            body: erro.message,
         });
     }
+}
+
+async function createUser(req, res){
+    const {name, email, password} = req.body;
 }
 
 module.exports={
