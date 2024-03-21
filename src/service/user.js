@@ -15,7 +15,8 @@ async function getAllUser(){
 }
 
 async function createUser(name, email, password){
-    const connection = mysql.createConnection(databaseConfig);
+    const connection = await mysql.createConnection(databaseConfig);
+    await connection.query("USE api_v2");
 
     const insertUser = "INSERT INTO user(name, email, password) VALUES (?,?,?)";
 
